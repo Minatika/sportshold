@@ -1,0 +1,44 @@
+.contacts {
+  width: 350px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.contacts__row {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 75px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: @color-secondary;
+}
+
+.contacts__icon {
+  fill: @color-main;
+}
+
+.contacts__title {
+  margin: 0;
+  padding-top: 3px;
+  color: @color-secondary;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contacts__desc {
+  margin: 0;
+  color: @color-main;
+}

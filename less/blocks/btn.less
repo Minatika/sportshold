@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  padding: 10px 30px 12px 30px;
+  color: @color-main;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @color-tertiary;
+
+  &:hover {
+    background-color: @color-quaternary;
+  }
+
+  &:active {
+    background-color: @color-quaternary;
+    opacity: 0.5;
+  }
+
+  &--banner {
+    padding: 10px 46px 12px 47px;
+    background-color: @color-secondary;
+  }
+
+  &--collection {
+    color: @color-black;
+    background-color: @color-blue;
+
+    &:hover {
+      background-color: @color-main;
+    }
+
+    &:active {
+      background-color: @color-main;
+      opacity: 0.5;
+    }
+  }
+}

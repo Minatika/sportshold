@@ -1,0 +1,112 @@
+.notices-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 35px 35px;
+  width: 255px;
+  height: 255px;
+
+  &--collection {
+    position: relative;
+    width: 540px;
+    min-height: 540px;
+    padding: 37px 50px 50px 50px;
+    background-image: url("../img/bg-collection.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &::before {
+      content: url("../img/collection-tail.png");
+      position: absolute;
+      top: 227px;
+      left: -14px;
+      width: 29px;
+      height: 56px;
+    }
+
+    &::after {
+      content: url("../img/icon-logo.svg");
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 32px;
+      height: 48px;
+    }
+  }
+
+  &--arrivals {
+    position: relative;
+    width: 100%;
+    min-height: 255px;
+    margin-bottom: 30px;
+    padding: 50px 50px 59px 200px;
+    background-color: @color-secondary;
+
+    &::before {
+      content: url("../img/bg-arrivals.png");
+      position: absolute;
+      top: -22px;
+      left: -12px;
+      width: 207px;
+      height: 277px;
+    }
+  }
+
+  &--best {
+    padding-top: 139px;
+    background-image: url("../img/bg-best.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--premium {
+    background-image: url("../img/bg-premium.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.notices-item__subtitle {
+  margin: 0;
+  font-size: 30px;
+  line-height: 38px;
+  color: @color-main;
+  font-weight: 300;
+  text-align: center;
+
+  &--premium {
+    color: @color-dark-gray;
+  }
+}
+
+.notices-item__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 700;
+  color: @color-main;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--collection {
+    color: @color-blue;
+    flex-grow: 1;
+  }
+
+  &--arrivals {
+    margin-top: 3px;
+    flex-grow: 1;
+  }
+
+  &--best {
+    color: @color-secondary;
+  }
+
+  &--premium {
+        text-shadow: 0px 0px 30px @color-shadow;
+  }
+}

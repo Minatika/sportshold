@@ -1,0 +1,97 @@
+.catalog {
+  min-height: 1118px;
+  background-color: @color-main;
+}
+
+.catalog__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .container();
+  padding-top: 45px;
+}
+
+.catalog__filter-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+.catalog__filter-item {
+  margin-right: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  color: @color-filter;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--active {
+    color: @color-tertiary;
+    font-weight: 700;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    color: @color-tertiary;
+  }
+
+  &:active {
+    color: @color-tertiary;
+    opacity: 0.5;
+  }
+}
+
+.catalog__brends {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0;
+  padding: 68px 30px 0 33px;
+}
+
+.catalog__brend {
+  width: 100px;
+  height: 70px;
+
+  &--adidas {
+    background-image: url("../img/icon-adidas.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--nike {
+    background-image: url("../img/icon-nike.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--puma {
+    background-image: url("../img/icon-puma.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--asics {
+    background-image: url("../img/icon-asics.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--nb {
+    width: 120px;
+    background-image: url("../img/icon-nb.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &--fila {
+    background-image: url("../img/icon-fila.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
