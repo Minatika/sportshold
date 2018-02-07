@@ -1,0 +1,50 @@
+.feedback {
+  min-height: 200px;
+  background-color: @color-secondary;
+}
+
+.feedback__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .container();
+}
+
+.feedback__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+
+  &:first-of-type {
+    padding-left: 89px;;
+  }
+}
+
+.feedback__mail {
+  position: absolute;
+  top: 79px;
+  left: 0;
+  width: 60px;
+  height: 42px;
+}
+
+.feedback__icon {
+  fill: @color-main;
+}
+
+.feedback__title {
+  margin: 0 0 6px;
+  font-size: 30px;
+  line-height: 30px;
+  color: @color-main;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feedback__desc {
+  margin: 0;
+  color: @color-main;
+}

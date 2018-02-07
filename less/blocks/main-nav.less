@@ -1,0 +1,159 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-bottom: 130px;
+}
+
+.main-nav__technical-list, .main-nav__user-list, .main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__technical-list {
+  width: 65%;
+  min-height: 50px;
+}
+
+.main-nav__user-list {
+  min-height: 50px;
+}
+
+.main-nav__technical-item {
+  padding: 10px 39px 12px 0;
+  font-size: 13px;
+  color: @color-main;
+
+  & a {
+    color: @color-main;
+    text-decoration: none;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+
+  &:hover a {
+    color: @color-secondary;
+  }
+
+  &:active a {
+    color: @color-basket;
+  }
+}
+
+.main-nav__icon {
+  padding-top: 4px;
+}
+
+.main-nav__user-item {
+  padding: 10px 20px 12px 19px;
+  font-size: 13px;
+  color: @color-main;
+
+  & a {
+    color: @color-main;
+    text-decoration: none;
+  }
+
+  &--login {
+    border-left: 1px solid @color-border;
+
+    &:hover {
+      background-color: @color-tertiary;
+    }
+
+    &:active {
+      background-color: @color-border;
+    }
+  }
+
+  &--register {
+    background-color: @color-secondary;
+
+    &:hover {
+      background-color: @color-tertiary;
+    }
+
+    &:active {
+      background-color: @color-border;
+    }
+  }
+
+  &:hover a {
+    color: @color-secondary;
+  }
+
+  &:hover .main-nav__count {
+    color: @color-secondary;
+  }
+
+  &:hover .main-nav__user-item-icon {
+    fill: @color-secondary
+  }
+
+  &:active a {
+    color: @color-basket;
+  }
+
+  &:active .main-nav__count {
+    color: @color-basket;
+  }
+
+  &:active .main-nav__user-item-icon {
+    fill: @color-basket;
+  }
+}
+
+.main-nav__count {
+  color: @color-basket;
+}
+
+.main-nav__user-item-icon {
+  fill: @color-main;
+}
+
+.main-nav__list {
+  min-height: 76px;
+}
+
+.main-nav__item {
+  position: relative;
+  padding: 26px 10px 24px 10px;
+  margin-right: 15px;
+
+  & a {
+    color: @color-main;
+    text-decoration: none;
+  }
+
+  &--active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: @color-secondary;
+  }
+
+  &--active a {
+    color: @color-secondary;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  &:hover a {
+    color: @color-secondary;
+  }
+
+  &:active a {
+    color: @color-basket;
+  }
+}

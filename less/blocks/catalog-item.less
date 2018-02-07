@@ -1,0 +1,82 @@
+.catalog-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 255px;
+  height: 350px;
+  margin-bottom: 30px;
+  padding: 25px 27px 30px 29px;
+  border: 1px solid @color-light-gray;
+
+  &:hover {
+    border-color: @color-secondary;
+    outline: 1px solid @color-secondary;
+  }
+
+  &:active {
+    border-color: @color-quaternary;
+    outline: 1px solid @color-quaternary;
+  }
+
+  &--sale25, &--sale50 {
+    &::after {
+      content: "-25%";
+      position: absolute;
+      top: 22px;
+      right: -1px;
+      width: 61px;
+      height: 28px;
+      color: @color-main;
+      font-weight: 700;
+      text-align: center;
+      background-color: @color-secondary;
+    }
+  }
+
+  &--sale50::after {
+    content: "-50%";
+  }
+}
+
+.catalog-item img {
+  flex-grow: 1;
+  display: block;
+}
+
+.catalog-item__price {
+  position: absolute;
+  top: 24px;
+  left: 29px;
+  margin: 0;
+  font-size: 24px;
+
+  &--sale {
+    color: @color-secondary;
+  }
+}
+
+.catalog-item__price-old {
+  position: absolute;
+  top: 53px;
+  left: 29px;
+  margin: 0;
+  text-decoration: line-through;
+}
+
+.catalog-item__sex {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-item__name {
+  margin: 0;
+}
+
+.catalog-item__key {
+  margin: 0;
+  font-size: 13px;
+  color: @color-filter;
+}
