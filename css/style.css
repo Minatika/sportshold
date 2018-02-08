@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Trueno";
   src: local("Trueno"), url("../fonts/truenoultblk.woff2") format("woff2"), url("../fonts/truenoultblk.woff") format("woff");
-  font-weight: 900;
+  font-weight: 800;
   font-style: normal;
 }
 .visually-hidden {
